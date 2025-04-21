@@ -1,14 +1,14 @@
 <template>
 
-    <div class="pl-1">
+    <div class="pl-1 bg-gray-800 text-white">
         <!-- Youtube embeed player -->
         <div>
             <div class="w-full h-full">
-                <!-- <iframe class="aspect-video w-full h-[700px]" src="https://www.youtube.com/embed/M66U_DuMCS8" title=""
+                <iframe class="aspect-video w-full h-[700px]" src="https://www.youtube.com/embed/M66U_DuMCS8" title=""
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen>
-                </iframe> -->
+                </iframe>
             </div>
         </div>
         <div class="mt-5 flex justify-around">
@@ -27,7 +27,7 @@
         <!-- Comments Box -->
         <div class="mt-5">
             <div>
-                <CommentBox />
+                <!-- <CommentBox /> -->
             </div>
         </div>
     </div>

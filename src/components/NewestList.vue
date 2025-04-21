@@ -1,9 +1,9 @@
 <template>
     <div>
         <div>
-            <p class="text-2xl">Najnovije:</p>
+            <p class="text-xl">Najnovije:</p>
         </div>
-        <div class="flex flex-col font-bold text-2xl">
+        <div class="flex flex-col space-y-3  font-bold text-xl">
             <p>Hello world 1</p>
             <p>Hello world 2</p>
             <p>Hello world 3</p>
