@@ -4,20 +4,39 @@
 
             <!-- Card 1 -->
             <div class="bg-white rounded-2xl shadow-md p-6 text-center">
-                <button class="hover:cursor-pointer"> <i class="fa-solid fa-plus"></i> Add Post</button>
+                <button @click="runAction('add_post')" class="hover:cursor-pointer"> <i class="fa-solid fa-plus"></i>
+                    Add Post</button>
             </div>
 
             <!-- Card 2 -->
             <div class="bg-white rounded-2xl shadow-md p-6 text-center">
-                <button class="hover:cursor-pointer"> <i class="fa-solid fa-chart-simple"></i> Analytics</button>
+                <button @click="runAction('analytics')" class="hover:cursor-pointer"> <i
+                        class="fa-solid fa-chart-simple"></i> Analytics</button>
 
             </div>
 
             <!-- Card 3 -->
             <div class="bg-white rounded-2xl shadow-md p-6 text-center">
-                <button class="hover:cursor-pointer"> <i class="fa-solid fa-gear"></i> Settings</button>
+                <button @click="runAction('settings')" class="hover:cursor-pointer"> <i class="fa-solid fa-gear"></i>
+                    Settings</button>
             </div>
 
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+
+type ActionType = 'settings' | 'analytics' | 'add_post'
+const runAction = (type: ActionType) => {
+    if (type == 'analytics') {
+        alert('analytics');
+    }
+    if (type == 'settings') {
+        alert('settings')
+    }
+    if (type == 'add_post') {
+        alert('add_post');
+    }
+} 
+</script>
