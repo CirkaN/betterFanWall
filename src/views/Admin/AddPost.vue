@@ -1,6 +1,8 @@
 <template>
     <div>
         <div class="p-2">
+            <button @click="goBack" class="hover:cursor-pointer">Go back</button>
+            <br>
             Add post:
             <div>
                 <form @submit.prevent="savePost">
@@ -10,7 +12,7 @@
                         <input v-model="postDTO.title" type="text" id="title"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                             placeholder="Title" required />
-                         </div>
+                    </div>
                     <div class="mb-5">
                         <label for="link" class="block mb-2 text-sm font-medium text-gray-900 ">Link:</label>
                         <input v-model="postDTO.url" type="text" id="link"
@@ -38,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import router from '@/router';
 import { ref } from 'vue';
 
 const postDTO = ref({
@@ -48,5 +51,8 @@ const postDTO = ref({
 
 const savePost = () => {
     alert('sendali smo');
+}
+const goBack = () => {
+    router.go(-1);
 }
 </script>

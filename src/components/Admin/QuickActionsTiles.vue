@@ -26,17 +26,19 @@
 </template>
 
 <script setup lang="ts">
+import router from '@/router';
+
 
 type ActionType = 'settings' | 'analytics' | 'add_post'
 const runAction = (type: ActionType) => {
     if (type == 'analytics') {
-        alert('analytics');
+        alert('Coming soon..');
     }
     if (type == 'settings') {
-        alert('settings')
+        alert('Coming soon...')
     }
     if (type == 'add_post') {
-        alert('add_post');
+        router.push({ name: 'add_post' })
     }
 } 
 </script>
