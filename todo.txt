@@ -1,0 +1,8 @@
+[] Add X on alert box so it can be dissmissed
+[] Add Register/Login 
+[] Fix styling for "Najnovije / Newest / Ostalo / Other"
+[] Add trans
+[] Introduce Chat
+[] Introduce admin panel
+[] Create show video page
+[] Create comment section in show video page
