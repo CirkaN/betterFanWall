@@ -3,15 +3,15 @@
         <!-- Alert Info Box  -->
         <AlertBox :alertText=alertText></AlertBox>
     </div>
-    <div>
-
-        <div class="p-10">
+    <div class="p-10">
+        <p class="font-bold text-3xl">Najnovije:</p>
+        <div>
             <!-- Video wall newest 3  -->
             <NewestVideoBox />
         </div>
-
+        <p class="font-bold text-3xl">Ostalo:</p>
         <!-- Video wall older desktop version -->
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-4 gap-5">
             <RegularVideoBox />
             <RegularVideoBox />
             <RegularVideoBox />
