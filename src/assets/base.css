@@ -1,1 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import 'tailwindcss';
+
+/* Optional: Apply Oswald globally */
+body {
+    font-family: 'Oswald', sans-serif;
+  }
