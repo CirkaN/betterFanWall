@@ -20,8 +20,8 @@ const router = createRouter({
           component: MainWall,
         },
         {
-          path: '/video',
-          name: 'video',
+          path: '/video/:id',
+          name: 'show_video',
           component: ShowPost,
         },
       ]

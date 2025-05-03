@@ -31,7 +31,6 @@ const loadVideos = () => {
 
         latestThree.value = allVideos.slice(0, 3);
         olderVideos.value = allVideos.slice(3);
-        console.log(latestThree.value);
     });
 }
 
