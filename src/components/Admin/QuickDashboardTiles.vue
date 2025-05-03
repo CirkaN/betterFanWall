@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-gray-100 flex items-center justify-center">
+    <div class="flex items-center justify-center">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl">
 
             <!-- Card 1 -->
@@ -16,8 +16,8 @@
 
             <!-- Card 3 -->
             <div class="bg-white rounded-2xl shadow-md p-6 text-center">
-                <h2 class="text-xl font-semibold text-gray-700">Number of Subscribers</h2>
-                <p class="mt-2 text-3xl font-bold text-red-600">{{ props.data.sub_count }}</p>
+                <h2 class="text-xl font-semibold text-gray-700">Number of likes</h2>
+                <p class="mt-2 text-3xl font-bold text-red-600">{{ props.data.like_count }}</p>
             </div>
         </div>
     </div>

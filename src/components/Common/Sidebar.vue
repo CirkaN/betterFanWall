@@ -110,5 +110,8 @@ const doNav = (action: string) => {
     if (action === 'posts') {
         router.push({ name: "posts_dashboard" });
     }
+    if(action === 'dashboard'){
+        router.push({ name: "admin_dashboard_main" }); 
+    }
 }
 </script>

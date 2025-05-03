@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MainWall from '@/views/MainWall.vue'
 import ShowPost from '@/views/Posts/ShowPost.vue'
 import AddPost from '@/views/Admin/posts/AddPost.vue'
-import Dashboard from '@/views/Admin/Dashboard.vue'
 import AdminDashboardMainView from '@/views/Admin/AdminDashboardMainView.vue'
 import PostDashboard from '@/views/Admin/posts/PostDashboard.vue'
 
@@ -34,11 +33,6 @@ const router = createRouter({
           name: "posts_dashboard",
           component: PostDashboard,
         },
-        {
-          path: "/admin/dashboard",
-          name: "admin_dashboard",
-          component: Dashboard,
-        }
       ]
     },
   ],
