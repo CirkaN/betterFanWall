@@ -7,7 +7,9 @@
                     alt="">
                 <div class=" hover:cursor-pointer absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                     <h3 class="text-3xl text-white font-bold">
-                        Video example title 1 </h3>
+                        {{threeVideos[0]?.title}}
+                        <!-- {{ threeVideos[0].title }} -->
+                     </h3>
                 </div>
             </div>
         </div>
@@ -19,7 +21,7 @@
                         alt="" />
                     <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800/80">
                         <h3 class=" hover:cursor-pointer text-3xl text-white font-bold">
-                            Video example title 1
+                            {{threeVideos[1]?.title}}
                         </h3>
                     </div>
                 </div>
@@ -32,7 +34,7 @@
                         alt="" />
                     <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800/80">
                         <h3 class="text-3xl text-white font-bold">
-                            Video example title 1
+                            {{threeVideos[2]?.title}}
                         </h3>
                     </div>
                 </div>
@@ -41,3 +43,7 @@
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+const props = defineProps(['threeVideos'])
+</script>
