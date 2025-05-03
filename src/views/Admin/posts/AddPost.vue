@@ -1,12 +1,8 @@
 <template>
     <div>
         <div class="p-2">
-            <button @click="goBack" class="hover:cursor-pointer">Go back</button>
-            <br>
-            Add post:
-            <div>
+            <div class="p-10">
                 <form @submit.prevent="savePost">
-
                     <div class="mb-5">
                         <label for="title" class="block mb-2 text-sm font-medium text-gray-900 ">Title:</label>
                         <input v-model="postDTO.title" type="text" id="title"
@@ -40,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import Sidebar from '@/components/Common/Sidebar.vue';
 import router from '@/router';
 import { ref } from 'vue';
 
