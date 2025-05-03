@@ -4,6 +4,7 @@ import ShowPost from '@/views/Posts/ShowPost.vue'
 import AddPost from '@/views/Admin/posts/AddPost.vue'
 import AdminDashboardMainView from '@/views/Admin/AdminDashboardMainView.vue'
 import PostDashboard from '@/views/Admin/posts/PostDashboard.vue'
+import MainFrontPage from '@/views/Front/MainFrontPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,13 +12,21 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: MainWall,
+      component: MainFrontPage,
+      children:[
+        {
+          path: '/',
+          name: 'dashboard',
+          component: MainWall,
+        },
+        {
+          path: '/video',
+          name: 'video',
+          component: ShowPost,
+        },
+      ]
     },
-    {
-      path: '/video',
-      name: 'video',
-      component: ShowPost,
-    },
+  
     {
       path: "/admin",
       name: 'admin_dashboard_main',

@@ -1,15 +1,11 @@
 <template>
-    <div>
-        <!-- Alert Info Box  -->
-        <AlertBox :alertText=alertText></AlertBox>
-    </div>
-    <div class="p-10">
-        <p class="font-bold text-3xl">Najnovije:</p>
+    <div class="pt-1 p-10">
+        <p class="text-3xl p-1">Najnovije:</p>
         <div>
             <!-- Video wall newest 3  -->
             <NewestVideoBox />
         </div>
-        <p class="font-bold text-3xl">Ostalo:</p>
+        <p class="text-3xl p-1">Ostalo:</p>
         <!-- Video wall older desktop version -->
         <div class="grid grid-cols-4 gap-5">
             <RegularVideoBox />
@@ -25,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+
 import AlertBox from '@/components/AlertBox.vue';
 import NewestVideoBox from '@/components/NewestVideoBox.vue';
 import RegularVideoBox from '@/components/RegularVideoBox.vue';

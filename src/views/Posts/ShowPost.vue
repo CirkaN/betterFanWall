@@ -1,6 +1,5 @@
 <template>
-
-    <div class="pl-1 bg-gray-800 text-white">
+    <div class="pl-1 bg-gray-800 text-white h-full">
         <!-- Youtube embeed player -->
         <div>
             <div class="w-full h-full">
