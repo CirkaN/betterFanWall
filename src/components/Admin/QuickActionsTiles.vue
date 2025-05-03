@@ -12,7 +12,6 @@
             <div class="bg-white rounded-2xl shadow-md p-6 text-center">
                 <button @click="runAction('analytics')" class="hover:cursor-pointer"> <i
                         class="fa-solid fa-chart-simple"></i> Analytics</button>
-
             </div>
 
             <!-- Card 3 -->

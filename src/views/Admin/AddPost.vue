@@ -40,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import Sidebar from '@/components/Common/Sidebar.vue';
 import router from '@/router';
 import { ref } from 'vue';
 
